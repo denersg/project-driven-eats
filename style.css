@@ -1,0 +1,15 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    /* font-family: 'Righteous', cursive; */
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-color: #eeeeee;
+    width: 414px;
+    /* height: 100vh; */
+
+    position: relative;
+}
