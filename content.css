@@ -4,8 +4,8 @@
     /* width: 400px;
     height: 300px; */
     /* background-color: #eeeeee; */
-    /* margin-top: 123px; */
-    margin: 123px 0 0 19px;
+    margin-top: 123px;
+    /* margin: 123px 0 0 19px; */
 }
 
 .selection{
@@ -20,6 +20,7 @@
 
 .selection span{
     margin-bottom: 10px;
+    margin-left: 19px;
     
     font-family: Righteous;
     font-weight: normal;
@@ -36,6 +37,7 @@
     /*Este atributo permite inserir 16px de espaço
      *entre os elementos, MENOS NO ÚLTIMO*/
     gap: 16px;
+    padding-left: 19px;
 
     /* Este atributo permite rolar a tela no eixo X, caso os 
     elementos escapem do espaço delimitado para eles. */

@@ -1,8 +1,28 @@
 .finalize-order{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    background-color: #FFFFFF;
     width: 414px;
     height: 92px;
 
     position: fixed;
     bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.finalize-order button{
+    width: 364px;
+    height: 61px;
+
+    background: #CBCBCB;
+    border-radius: 50px;
+
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
 }
