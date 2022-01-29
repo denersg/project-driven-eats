@@ -1,0 +1,9 @@
+@media(max-width: 414px){
+    .options::-webkit-scrollbar{
+        display: none;
+    }
+
+    *{
+        scrollbar-width: none;  /* Firefox */
+    }
+}

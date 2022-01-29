@@ -16,8 +16,13 @@
     width: 364px;
     height: 61px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background: #CBCBCB;
     border-radius: 50px;
+    border: none;
 
     font-weight: normal;
     font-size: 20px;
@@ -26,3 +31,12 @@
     letter-spacing: 0.018em;
     color: #FFFFFF;
 }
+
+.finalize-order p{
+    /* background-color: blueviolet; */
+    width: 230px;
+}
+
+/* .finalize-order .selecionado{
+    border: 5px solid red;
+} */
