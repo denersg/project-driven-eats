@@ -108,13 +108,29 @@
 
 .dish-content .price{
     /* background-color: steelblue; */
+
+    display: flex;
+    justify-content: space-between;
+
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
 }
+.price .check{
+    color: #fff;
+}
+
+.selected .check{
+    font-size: 20px;
+    color: #32B72F;
+}
 
 .space{
     /* background-color: springgreen; */
     height: 108px;
+}
+
+.cursor{
+    cursor: pointer;
 }

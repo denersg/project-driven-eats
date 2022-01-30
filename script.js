@@ -1,27 +1,50 @@
-// let i = 0;
-
-// function clicado(){
-//     const selected = document.querySelector(".botao");
-//     selected.classList.toggle("selecionado");
-//     // i++;
-//     // console.log(i)
-// }
-
 let i = 0;
-function selectItem(e){
-    if(i === 0){
-        if(e.classList.contains("selected")){
-            e.classList.remove("selected");
-        }
-        else{
-            e.classList.add("selected");
-        }
-        i++;
-    }
-    // const item = document.querySelector(".dish");
-    // item.classList.toggle("selected");
+
+function selectCheckMark(e){
+    //Adiciona o ícone de marcação
+    e.classList.add("check");
 }
 
-// ************* PODE AJUDAR MUITO *************
+function removeSelectedDessert(){
+    const selectedDessert = document.querySelector(".dessert .selected");
+    if(selectedDessert !== null){
+        selectedDessert.classList.remove("selected");
+    }
+}
 
-{/* <div id="item1" onclick=selecionar("item1")> */}
+function selectDessert(e){
+    removeSelectedDessert();
+    selectCheckMark(e);
+    //Adiciona a classe 'selected'
+    e.classList.add("selected");
+}
+
+function removeSelectedDrink(){
+    const selectedDrink = document.querySelector(".drink .selected");
+    if(selectedDrink !== null){
+        selectedDrink.classList.remove("selected");
+    }
+}
+
+function selectDrink(e){
+    removeSelectedDrink();
+    selectCheckMark(e);
+    //Adiciona a classe 'selected'
+    e.classList.add("selected");
+}
+
+function removeSelectedMeal(){
+    const selectedDish = document.querySelector(".meal .selected");
+    if(selectedDish !== null){
+        selectedDish.classList.remove("selected");
+    }
+}
+
+function selectMeal(e){
+    removeSelectedMeal();
+    //Chama a função para inserir o ícone de marcação
+    selectCheckMark(e);
+    //Adiciona a classe 'selected'
+    e.classList.add("selected");
+    console.log(e.classList);
+}
