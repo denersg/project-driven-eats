@@ -12,7 +12,7 @@
     align-items: center;
 }
 
-.finalize-order button{
+.blocked-button{
     width: 364px;
     height: 61px;
 
@@ -40,3 +40,23 @@
 /* .finalize-order .selecionado{
     border: 5px solid red;
 } */
+
+.select-button{
+    width: 364px;
+    height: 61px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #32B72F;
+    border-radius: 50px;
+    border: none;
+
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #fff;
+}

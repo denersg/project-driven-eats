@@ -39,7 +39,7 @@
             <section class="selection">
                 <span>Primeiro, seu prato</span>
                 <div class="options meal">
-                    <div class="dish cursor" onclick="selectMeal(this)">
+                    <div class="dish plate1 cursor" onclick="selectMeal(this, 'plate1')">
                         <div class="dish-content">
                             <img src="./images/frango_yin_yang.png" alt="prato">
                             <p class="title">Frango Yin Yang</p>
@@ -47,7 +47,7 @@
                             <p class="price">R$ 14,90<ion-icon name="checkmark-circle" class="check"></ion-icon></p>
                         </div>
                     </div>
-                    <div class="dish cursor" onclick="selectMeal(this)">
+                    <div class="dish plate2 cursor" onclick="selectMeal(this, 'plate2')">
                         <div class="dish-content">
                             <img src="./images/ramen.jpg" alt="prato">
                             <p class="title">Ramen</p>
@@ -55,7 +55,7 @@
                             <p class="price">R$ 17,49<ion-icon name="checkmark-circle" class="check"></ion-icon></p>
                         </div>
                     </div>
-                    <div class="dish cursor" onclick="selectMeal(this)">
+                    <div class="dish plate3 cursor" onclick="selectMeal(this, 'plate3')">
                         <div class="dish-content">
                             <img src="./images/pizza.jpg" alt="prato">
                             <p class="title">Pizza Italiana</p>
@@ -63,7 +63,7 @@
                             <p class="price">R$ 21,99<ion-icon name="checkmark-circle" class="check"></ion-icon></p>
                         </div>
                     </div>
-                    <div class="dish cursor" onclick="selectDish(this)">
+                    <div class="dish plate4 cursor" onclick="selectMeal(this, 'plate4')">
                         <div class="dish-content">
                             <img src="./images/hamburger.jpg" alt="prato">
                             <p class="title">Hambúrguer</p>
@@ -79,7 +79,7 @@
             <section class="selection">
                 <span>Agora, sua bebida</span>
                 <div class="options drink">
-                    <div class="dish cursor" onclick="selectDrink(this)">
+                    <div class="dish drink1 cursor" onclick="selectDrink(this, 'drink1')">
                         <div class="dish-content">
                             <img src="./images/coke.jpg" alt="bebida">
                             <p class="title">Coquinha gelada</p>
@@ -87,7 +87,7 @@
                             <p class="price">R$ 4,90<ion-icon name="checkmark-circle" class="check"></ion-icon></p>
                         </div>
                     </div>
-                    <div class="dish cursor" onclick="selectDrink(this)">
+                    <div class="dish drink2 cursor" onclick="selectDrink(this, 'drink2')">
                         <div class="dish-content">
                             <img src="./images/milkshake.jpg" alt="bebida">
                             <p class="title">Milkshake</p>
@@ -95,7 +95,7 @@
                             <p class="price">R$ 5,69<ion-icon name="checkmark-circle" class="check"></ion-icon></p>
                         </div>
                     </div>
-                    <div class="dish cursor" onclick="selectDrink(this)">
+                    <div class="dish drink3 cursor" onclick="selectDrink(this, 'drink3')">
                         <div class="dish-content">
                             <img src="./images/juice.jpg" alt="bebida">
                             <p class="title">Suco</p>
@@ -111,7 +111,7 @@
             <section class="selection">
                 <span>Por fim, sua sobremesa</span>
                 <div class="options dessert">
-                    <div class="dish cursor" onclick="selectDessert(this)">
+                    <div class="dish dessert1 cursor" onclick="selectDessert(this, 'dessert1')">
                         <div class="dish-content">
                             <img src="./images/pudding.jpg" alt="sobremesa">
                             <p class="title">Pudim</p>
@@ -119,7 +119,7 @@
                             <p class="price">R$ 4,90<ion-icon name="checkmark-circle" class="check"></ion-icon></p>
                         </div>
                     </div>
-                    <div class="dish cursor" onclick="selectDessert(this)">
+                    <div class="dish dessert2 cursor" onclick="selectDessert(this, 'dessert2')">
                         <div class="dish-content">
                             <img src="./images/brownie.jpg" alt="sobremesa">
                             <p class="title">Brownie</p>
@@ -127,7 +127,7 @@
                             <p class="price">R$ 6,00<ion-icon name="checkmark-circle" class="check"></ion-icon></p>
                         </div>
                     </div>
-                    <div class="dish cursor" onclick="selectDessert(this)">
+                    <div class="dish dessert3 cursor" onclick="selectDessert(this, 'dessert3')">
                         <div class="dish-content">
                             <img src="./images/cupcake.jpg" alt="sobremesa">
                             <p class="title">Cupcake</p>
@@ -143,7 +143,7 @@
 
         <!-- ********* RODAPÉ (FIXO) ********* -->
         <footer class="finalize-order">
-            <button><p>Selecione os 3 itens para fechar o pedido</p></button>
+            <button class="blocked-button"><p>Selecione os 3 itens para fechar o pedido</p></button>
             <!-- <button class="botao" onclick="clicado()"><p>Selecione os 3 itens para fechar o pedido</p></button> -->
         </footer>
     </div>

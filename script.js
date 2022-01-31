@@ -1,4 +1,18 @@
-let i = 0;
+let meal, mealPrice, drink, drinkPrice, dessert, dessertPrice;
+
+function showEndButton(){
+    const endButton = document.querySelector(".blocked-button");
+    
+    //Para evitar possíveis erros
+    if(endButton != null){
+        if(meal != undefined && drink != undefined && dessert != undefined){
+            console.log("ENTROOOUUU")
+            endButton.classList.remove("blocked-button");
+            endButton.classList.add("select-button");
+            endButton.innerHTML = "Fechar pedido";
+        }
+    }
+}
 
 function selectCheckMark(e){
     //Adiciona o ícone de marcação
@@ -12,11 +26,16 @@ function removeSelectedDessert(){
     }
 }
 
-function selectDessert(e){
+function selectDessert(e, chosenDessert){
+    dessert = document.querySelector(`.${chosenDessert} .dish-content .title`).innerText;
+    dessertPrice = document.querySelector(`.${chosenDessert} .dish-content .price`).innerText;
+    // console.log(dessert)
+    // console.log(dessertPrice)
     removeSelectedDessert();
     selectCheckMark(e);
     //Adiciona a classe 'selected'
     e.classList.add("selected");
+    showEndButton();
 }
 
 function removeSelectedDrink(){
@@ -26,11 +45,16 @@ function removeSelectedDrink(){
     }
 }
 
-function selectDrink(e){
+function selectDrink(e, chosenDrink){
+    drink = document.querySelector(`.${chosenDrink} .dish-content .title`).innerText;
+    drinkPrice = document.querySelector(`.${chosenDrink} .dish-content .price`).innerText;
+    // console.log(drink)
+    // console.log(drinkPrice)
     removeSelectedDrink();
     selectCheckMark(e);
     //Adiciona a classe 'selected'
     e.classList.add("selected");
+    showEndButton();
 }
 
 function removeSelectedMeal(){
@@ -40,11 +64,15 @@ function removeSelectedMeal(){
     }
 }
 
-function selectMeal(e){
+function selectMeal(e, chosenMeal){
+    meal = document.querySelector(`.${chosenMeal} .dish-content .title`).innerText;
+    mealPrice = document.querySelector(`.${chosenMeal} .dish-content .price`).innerText;
+    // console.log(meal)
+    // console.log(mealPrice)
+    
     removeSelectedMeal();
-    //Chama a função para inserir o ícone de marcação
     selectCheckMark(e);
-    //Adiciona a classe 'selected'
+    
     e.classList.add("selected");
-    console.log(e.classList);
+    showEndButton();
 }
